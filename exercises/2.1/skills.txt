@@ -3,4 +3,7 @@ O que eu vou aprender na Trybe:
 - Unix
 - Bash
 - Git
-Esse foi meu primeiro teste em um exercicio.
+- React
+- HTML
+- CSS
+
