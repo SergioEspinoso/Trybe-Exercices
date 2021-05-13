@@ -5,21 +5,44 @@
     <title>HTML</title>
     <style>
         h1{
-            width: 65px;
+            font-family: sans-serif;
+            font-size: 65px;
             color: orange;
         }
-        .cordefundo{
-            background-color: tomato;
+        p {
+            font-weight: 600;
+            font-size: 3em;
+            font-style: oblique;
+            text-decoration: underline;
         }
+        body {
+            font-size: 16px;
+        }
+        .cordefundo{
+            background-color: tan;
+        }
+        li {
+            line-height: 25px;
+        }
+        #cAmarelo.cordefundo {
+            background-color: yellow;
+        }
+        #cVermelho.cordefundo{
+            background-color: red;
+        }
+        #cMarron.cordefundo{
+            background-color: brown;
+        }
+
     </style>
   </head>
   <body>
     <h1>Exercícios 3.2</h1>
     <p class="cordefundo">Qual é a sua cor favorita?</p>
     <ul class="cordefundo">
-      <li>Amarelo</li>
-      <li>Vermelho</li>
-      <li>Marrom</li>
+      <li id="cAmarelo" class="cordefundo">Amarelo</li>
+      <li id="cVermelho" class="cordefundo">Vermelho</li>
+      <li id="cMarron" class="cordefundo">Marrom</li>
     </ul>
   </body>
 </html>
