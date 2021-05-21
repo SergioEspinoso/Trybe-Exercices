@@ -4,7 +4,12 @@ let vazio = 0;
 for (index = 0; index < numbers.length; index += 1){
  if (numbers[index] % 2 !== 0) {
    vazio++
- }
+ } 
 }
 
-console.log(vazio);
+if (vazio === 0){
+  console.log('Nenhum mumero impar')
+} else {
+  console.log(vazio);
+}
+
