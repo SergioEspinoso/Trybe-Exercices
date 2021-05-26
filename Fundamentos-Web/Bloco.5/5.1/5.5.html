@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    <div class="main-content">
+      <div class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </div>
+    </div>
+    <script>
+        document.getElementsByTagName('p')[0].innerText = 'Em 2 anos pretendo estar trabalhando e aprendendo ainda mais JS';
+        let dcolor = document.getElementsByClassName('main-content'); 
+        dcolor[0].style.backgroundColor = 'green';
+        document.querySelectorAll('.main-content .center-content')[0].style.backgroundColor = 'white';
+        document.getElementsByTagName('h1')[0].innerText = 'Exercício 5.1 - JavaScript';
+        let upperCase = document.getElementsByTagName('p')[0];
+        upperCase.style = 'text-transform: upperCase';
+        let log = document.getElementsByTagName('p');
+        for (let index = 0; index < log.length; index += 1){
+        console.log(log[index]);
+};
+    </script>
+  </body>
+</html>
