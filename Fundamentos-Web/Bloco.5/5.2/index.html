@@ -59,6 +59,7 @@
     <script>
       let ahaUm = document.createElement('h1');
       ahaUm.innerText = 'Exercício 5.2 - JavaScript';
+      ahaUm.className = ('title');
       document.body.appendChild(ahaUm);
 
       let div = document.createElement('div');
@@ -80,6 +81,39 @@
       let divFilhoTres = document.createElement('div');
       div.appendChild(divFilhoTres);
       divFilhoTres.className = ('right-content');
+
+      let imgUm = document.createElement('img');
+      divFilhoDois.appendChild(imgUm);
+      imgUm.src = 'https://picsum.photos/200';
+      imgUm.className = ('small-image');
+
+      let listaNaoOrdenada = document.createElement('ul');
+      divFilhoTres.appendChild(listaNaoOrdenada);
+      const listaDezNumeros = ['Um', 'Dois', 'Tres', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+      createList(listaDezNumeros);
+
+      function createList (arr) {
+        for (let index = 0; index < arr.length; index += 1) {
+          let listLi = document.createElement('li');
+          listLi.innerHTML = arr[index];
+          listaNaoOrdenada.appendChild(listLi);
+        }
+      }
+
+      for (let index = 0; index < 3; index += 1) {
+        let textEleHTres = document.createElement('h3');
+        div.appendChild(textEleHTres);
+        textEleHTres.className = ('description');
+      }
+
+      div.removeChild(divFilhoDois);
+
+      divFilhoTres.style.marginRight = 'auto';
+      
+      divFilhoUm.style.backgroundColor = 'green';
+
+      listaNaoOrdenada.removeChild(listaNaoOrdenada.lastChild);
+      listaNaoOrdenada.removeChild(listaNaoOrdenada.lastChild);
     </script>
   </body>
 </html>
