@@ -2,13 +2,15 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="bulma.min.css">
     <title>Forms</title>
 </head>
 <body>
-    <fieldset>
-        Nome:
-        <input type="text" name="name" id="user-name" maxlength="40" required>
-        <br> <br>
+    <div class="container">
+        <label for="user-name" class ="label">Nome: </label>
+        <div class="control">
+          <input class="input" type="text" name="name" id="user-name" maxlength="40" placeholder="Digite seu Nome: máximo de 40 letras" required>
+        </div>
         Email:
         <input type="email" name="email" id="user-email" maxlength="50" required>
         <br> <br>
@@ -26,7 +28,7 @@
         <label for=""> Tipo:</label>
             <input type="radio" name="type" id="user-type"> Casa
             <input type="radio" name="type" id="user-type2"> Apartamento
-    </fieldset>
+    </div>
     <fieldset>
         <label for="text-area">Resumo do Curriculo: </label>
         <textarea name="textarea" id="text-area" maxlength="1000" required></textarea>
@@ -40,6 +42,8 @@
         <label for="">Data de Inicio</label>
         <input type="text" name="date" id="user-date" required>
     </fieldset>
+    <button id='send-info'>Enviar</button>
+    <button id='reset-info'>Reset</button>
     <script src="script.js"></script>
 </body>
 </html>
