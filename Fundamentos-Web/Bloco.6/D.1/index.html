@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bulma.min.css">
+    <title>Forms</title>
+</head>
+<body>
+    <div class="container">
+        <label for="user-name" class ="label">Nome: </label>
+        <div class="control">
+          <input class="input" type="text" name="name" id="user-name" maxlength="40" placeholder="Digite seu Nome: máximo de 40 letras" required>
+        </div>
+        Email:
+        <input type="email" name="email" id="user-email" maxlength="50" required>
+        <br> <br>
+        CPF:
+        <input type="text" name="cpf" id="user-cpf" maxlength="11" required>
+        <br> <br>
+        Endereço:
+        <input type="text" name="address" id="user-address" maxlength="200" required>
+        <br> <br>
+        <label for="user-state"> Estado: </label>
+            <select name="state" id="user-state" required>
+                <option disabled selected value>Selecione seu estado</option>
+            </select>
+        <br> <br>
+        <label for=""> Tipo:</label>
+            <input type="radio" name="type" id="user-type"> Casa
+            <input type="radio" name="type" id="user-type2"> Apartamento
+    </div>
+    <fieldset>
+        <label for="text-area">Resumo do Curriculo: </label>
+        <textarea name="textarea" id="text-area" maxlength="1000" required></textarea>
+        <br><br>
+        <label for="">Cargo: </label>
+        <input type="text" name="cargo" id="user-cargo" required>
+        <br><br>
+        <label for="">Descrição do Cargo:</label>
+        <input type="text" name="descargo" id="user-dis" required>
+        <br><br>
+        <label for="">Data de Inicio</label>
+        <input type="text" name="date" id="user-date" required>
+    </fieldset>
+    <button id='send-info'>Enviar</button>
+    <button id='reset-info'>Reset</button>
+    <script src="script.js"></script>
+</body>
+</html>
