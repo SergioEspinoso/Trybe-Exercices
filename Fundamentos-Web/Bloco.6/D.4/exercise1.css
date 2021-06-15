@@ -1,8 +1,8 @@
 body {
-
+  font-size: 1.1em;
 }
 h1 {
-
+  font-size: 1.5em;
 }
 h2 {
 
@@ -10,8 +10,36 @@ h2 {
 
 img {
     max-width: 100%;
+    margin-bottom: 10px;
 }
 
 figure {
     margin: 0;
+}
+
+@media screen and (min-width: 850px) {
+  body {
+    background-color: wheat;
+    font-size: 1.5em;
+    margin: 25px 5%;
+  }
+
+  figure {
+    float: left;
+    width: 45%;
+    margin: 10px 20px;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  body {
+      background-color: turquoise;
+      margin: 25px 10%;
+      max-width: 1130px;
+  }
+
+  figure {
+      width: 45%;
+      margin: 20px 25px;
+  }
 }
